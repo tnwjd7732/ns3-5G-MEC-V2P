@@ -111,8 +111,7 @@ V2PUdpTraceClientHelper::V2PUdpTraceClientHelper ()
 V2PUdpTraceClientHelper::V2PUdpTraceClientHelper (Address address, uint16_t port, std::string filename)
 {
   m_factory.SetTypeId (V2PUdpTraceClient::GetTypeId ());
-  SetAttribute ("RemoteAddress", AddressValue (address));lename));
-}
+  SetAttribute ("RemoteAddress", AddressValue (address));
   SetAttribute ("RemotePort", UintegerValue (port));
   SetAttribute ("TraceFilename", StringValue (filename));
 }
